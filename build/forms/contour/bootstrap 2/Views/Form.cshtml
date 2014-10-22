@@ -69,10 +69,11 @@ else
                             <div class="@f.CssClass control-group" @{if (hidden){<text> style="display: none"</text>}}>
                                 @if(!f.HideLabel){<label for="@f.Id" class="control-label">@Html.Raw(f.Caption) @if (f.ShowIndicator){<span class="contourIndicator">@Model.Indicator</span>}</label>}
                                 <div class="controls">
+                                @if (!string.IsNullOrEmpty(f.ToolTip)){<p class="help-block alert alert-info">@f.ToolTip</p>}
                                 @Html.Partial(FieldViewResolver.GetFieldView(Model.FormId, f.FieldTypeName, f.Caption), f)
                                 @if (Model.ShowFieldValidaton){<span class="help-inline">@Html.ValidationMessage(f.Id)</span>}                                                         
                                 </div>
-                                @if (!string.IsNullOrEmpty(f.ToolTip)){<p class="help-block alert alert-info">@f.ToolTip</p>}
+                                
                             </div>
                         }
                     </fieldset>
