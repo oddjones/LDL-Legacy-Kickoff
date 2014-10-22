@@ -1,10 +1,14 @@
-LDL-kickoff
+LDL-Legacy-kickoff
 ===========
 
 A Codekit starter kit for LDL Digital Services
 
 About the LDL-Kickoff Starter Kit
 The starter kit is a "kickoff" scaffolding for Codekit, based around the "CODEKIT Kickoff" scaffolding produced by The Hive Media. It's job is to simplify and separate all the discrete elements we may use to put together a website into a kit of parts, speeding up design and development and reducing duplication and site bloat.
+
+About the Legacy version
+------------------------
+This "legacy" version is has been recompiled to work with the older Bootstrap 2.3.2. Why? Because that's still being used by some of our sites (most notably Liverpool.gov.uk) and this starter kit conatins some stuff which lives there (most notably the Contour forms stuff)
 
 How does it work?
 -----------------
