@@ -14,5 +14,5 @@ LOOK & FEEL
 VALIDATION
 ----------
 
-* Change standard validation text messages to red borders and placeholders/ticks
+* Change standard (mandatory field) validation text messages to red borders and placeholders/ticks
  

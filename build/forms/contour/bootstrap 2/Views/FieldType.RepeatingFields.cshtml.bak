@@ -37,7 +37,7 @@
             itemValues = repeaterData[i];
         }
 
-        // Loop throught the fields within the row
+        // Loop through the fields within the row
         <div class="LdlRepeaterItem">
             @foreach (var field in fields)
             {
