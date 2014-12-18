@@ -22,8 +22,8 @@ var App = (function() {
 		//Documentation Specific Nav handling
 		var dna = $('#dNavAcc').val();
 		var dni = $('#dNavItem').val();
-		console.log('dna:'+dna);
-		console.log('dni:'+dni);
+		/*console.log('dna:'+dna);
+		console.log('dni:'+dni);*/
 		$('#collapse-'+dna).addClass('in');
 		$('#collapse-'+dna+" .item-"+dni).addClass('active');
 
@@ -43,7 +43,6 @@ var App = (function() {
 			}
 			
 		//---------------------------------------
-		
 	
 		//console.log("Ready and Listening captain!");
 	};	

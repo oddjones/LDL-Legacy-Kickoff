@@ -7,7 +7,7 @@ $img-url: "../img";
 // Example of how to use -- background: url("#{$img-url}/background-image.png") repeat top left;
 
 // Include Libaries
-@import "libraries";
+//@import "libraries";
 
 // Color Palette & Mixins for the Application
 // ------------------------------------------------------------------------
@@ -31,11 +31,10 @@ $img-url: "../img";
 
 // @import "partials/...";
 
-
-
 @import "partials/header";
 @import "partials/footer";
 @import "partials/nav/archive-nav";
+@import "partials/forms";
 
 // Mobile Specific Styles & Settings
 @import "globals/mobile";
@@ -54,10 +53,10 @@ $img-url: "../img";
 .bs-callout-info h4{color:#5bc0de}
 
 //bootstrap2 fixes
-#pageContent{width:960px;}
+
 .listPage .jumbotron{min-height:310px;}
 .navbar{height:50px;}
-.nav{height:50px;background:black;}
+header .nav{height:50px;background:black;}
 .sr-only{display:block;margin-top:-20px;}
 .custom-search-form{padding-top:15px;}
 
@@ -85,4 +84,8 @@ p.meta{font-style: italic;font-size: 80%;}
 .imgHolder img{max-width:100%!important;height:auto;}
 .imgCaption{font-size:80%;font-style: italic;}
 #content ul{list-style: disc;margin-left:20px;}
+#content ul.nav {list-style:none!important;margin:auto!important;}
+
+//hidden elements
+.hideme{/*height:0px;*/border:2px solid red;}
 
